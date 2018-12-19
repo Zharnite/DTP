@@ -9,6 +9,9 @@ package operation1;
  *
  * @author zheny
  */
-public class Buildable {
+public abstract class Buildable {
+    private int cost;
+    private int pollutionAmount;
+    private int populationAmount;
     
 }

@@ -10,5 +10,14 @@ package operation1;
  * @author zheny
  */
 public class Player extends People {
+    private int money;
     
+    public Player(String name) {
+        super(name);
+        money = 100;
+    }
+    
+    public void addMoney(int n) {
+        money += n;
+    }
 }

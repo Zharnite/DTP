@@ -9,8 +9,14 @@ package operation1;
  *
  * @author zheny
  */
-public class People {
-    private int name;
+public abstract class People {
+    private String name;
     
+    public People(String name) {
+        this.name = name;
+    }
     
+    public String getName() {
+        return name;
+    }
 }

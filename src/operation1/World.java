@@ -31,7 +31,7 @@ public class World {
         buildings = new ArrayList<Building>();
         plants = new ArrayList<Plant>();
         people = new ArrayList<People>();
-        player = new Player(); //edit constructor
+        player = new Player("Player"); //edit constructor
         
     }
     
@@ -69,7 +69,11 @@ public class World {
         buildings.add(b);
     }
     
-    public Building getBuilding(int index) {
+    public List<Building> getBuildings() {
+        return buildings;
+    }
+    
+    public Building getBuildingAt(int index) {
         return buildings.get(index);
     }    
     
@@ -77,11 +81,15 @@ public class World {
         return buildings.size();
     }
     
-    public void addPlant(Plant p) {
+    public void addPlantAt(Plant p) {
         plants.add(p);
     }
     
-    public Plant getPlant(int index) {
+    public List<Plant> getPlants() {
+        return plants;
+    }
+    
+    public Plant getPlantAt(int index) {
         return plants.get(index);
     }    
     
@@ -93,7 +101,11 @@ public class World {
         people.add(p);
     }
     
-    public People getPerson(int index) {
+    public List<People> getPeople() {
+        return people;
+    }
+    
+    public People getPersonAt(int index) {
         return people.get(index);
     }
     

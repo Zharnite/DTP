@@ -10,5 +10,15 @@ package operation1;
  * @author zheny
  */
 public class NonPlayableCharacter extends People {
+    private String description;
+
+    public NonPlayableCharacter(String name) {
+        super(name);
+        makeDescription();
+    }
+    
+    private void makeDescription() {
+        description = getName() + "is awesome!";
+    }
     
 }
